@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Девайс - Каталог товаров</title>
   </head>
 
@@ -14,7 +16,7 @@
         <img src="img/content/logo-device.svg" width="163" height="35" alt="Логотип проекта Девайс" />
       </a>
       <div>
-        <form action="">
+        <form action="https://echo.htmlacademy.ru/">
           <label for="">Поле поиска по сайту</label>
           <input type="text" name="" id="" placeholder="Поиск по сайту" />
           <button type="submit">Найти</button>
@@ -72,63 +74,59 @@
         </ul>
       </section>
 
-      <aside>
+      <aside class="filter">
         <h2>Фильтр</h2>
-        <form action="">
+        <form class="filter__options" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset>
             <legend>Стоимость</legend>
-            <!-- price -->
+            <label class="min-price" for="min-price" tabindex="0"></label>
+            <label class="max-price" for="max-price" tabindex="0"></label>
+            <span>от </span><input type="number" name="min-price" id="min-price" min="0" value="0">
+            <span>до </span><input type="number" name="max-price" id="max-price" min="0" value="5000">
           </fieldset>
+
           <fieldset>
             <legend>Цвет</legend>
             <ul>
               <li>
-                <label for="">
-                  <input type="checkbox">
-                  Чёрный
-                </label>
+                <input type="checkbox" name="black" id="filter-black" checked>
+                <label for="filter-black">Чёрный</label>
               </li>
               <li>
-                <label for="">
-                  <input type="checkbox">
-                  Белый
-                </label>
+                <input type="checkbox" name="white" id="filter-white">
+                <label for="filter-white">Белый</label>
               </li>
               <li>
-                <label for="">
-                  <input type="checkbox">
-                  Синий
-                </label>
+                <input type="checkbox" name="blue" id="filter-blue" checked>
+                <label for="filter-blue">Синий</label>
               </li>
               <li>
-                <label for="">
-                  <input type="checkbox">
-                  Красный
-                </label>
+                <input type="checkbox" name="red" id="filter-red" checked>
+                <label for="filter-red">Красный</label>
               </li>
               <li>
-                <label for="">
-                  <input type="checkbox">
-                  Розовый
-                </label>
+                <input type="checkbox" name="pink" id="filter-pink">
+                <label for="filter-pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
+
           <fieldset>
             <legend>Bluetooth</legend>
             <ul>
               <li>
-                <label for="">
-                  <input type="radio" name="" id="">
+                <label>
+                  <input type="radio" name="filter-bluetooth" value="true" checked><span>Есть</span>
                 </label>
               </li>
               <li>
-                <label for="">
-                  <input type="radio" name="" id="">
+                <label>
+                  <input type="radio" name="filter-bluetooth" value="false"><span>Нет</span>
                 </label>
               </li>
             </ul>
           </fieldset>
+
           <button type="submit">Показать</button>
         </form>
       </aside>
@@ -244,17 +242,17 @@
         <ul>
           <li>
             <a href="https://facebook.com/">
-              <img src="img/decor/socials.svg" width="32" height="32" alt="Facebook" />
+              <img src="img/decor/icon-fb.svg" width="32" height="32" alt="Facebook" />
             </a>
           </li>
           <li>
             <a href="https://instagram.com/">
-              <img src="img/decor/socials.svg" width="32" height="32" alt="Instagram" />
+              <img src="img/decor/icon-instagram.svg" width="32" height="32" alt="Instagram" />
             </a>
           </li>
           <li>
             <a href="https://www.twitter.com/">
-              <img src="img/decor/socials.svg" width="32" height="32" alt="Twitter" />
+              <img src="img/decor/icon-twitter.svg" width="32" height="32" alt="Twitter" />
             </a>
           </li>
         </ul>
