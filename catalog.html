@@ -11,20 +11,51 @@
   </head>
 
   <body class="page-body">
+    <svg class="user-menu-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      version="1.1">
+      <symbol id="user" viewBox="0 0 9 10">
+        <path fill="currentColor"
+          d="M4.5.333c1.197 0 2.167 1.044 2.167 2.334C6.667 3.956 5.697 5 4.5 5 3.303 5 2.333 3.956 2.333 2.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917C2.28 5.583.167 7.1.167 8.5.167 9.667 4.5 9.667 4.5 9.667z">
+        </path>
+      </symbol>
+      <symbol id="compare" viewBox="0 0 10 10">
+        <path fill="currentColor" d="M8 2h1.984v8H8zM0 3h1.984v7H0zm4-3h2v10H4z"></path>
+      </symbol>
+      <symbol id="cart" viewBox="0 0 12 12">
+        <path fill="currentColor"
+          d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z">
+        </path>
+        <path fill="currentColor"
+          d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z">
+        </path>
+      </symbol>
+      <symbol id="logo" viewBox="0 0 164 35">
+        <path fill="currentColor"
+          d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z">
+        </path>
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z" />
+      </symbol>
+
+    </svg>
     <div class="container">
       <header class="page-header">
         <a class="logo__link pseudo-opacity">
-          <img src="img/content/logo-device.svg" width="163" height="35" alt="Логотип проекта Девайс"
-            class="logo__picture" />
+          <svg class="logo__picture" width="164" height="35">
+            <use xlink:href="#logo"></use>
+          </svg>
+          <!-- <img src="img/content/logo-device.svg" width="163" height="35" alt="Логотип проекта Девайс"
+                    class="logo__picture" /> -->
         </a>
         <div>
           <form action="https://echo.htmlacademy.ru/" class="search">
-            <label for="">Поле поиска по сайту</label>
-            <input type="text" name="" id="" placeholder="Поиск по сайту" />
+            <label for="search">Поле поиска по сайту</label>
+            <input type="text" name="search" id="search" placeholder="Поиск по сайту" />
             <button type="submit">Найти</button>
           </form>
 
-          <ul class="user-menu">
+          <ul class="user-menu list">
             <li class="user-menu__item user-menu__item--no-username">
               <a href="/blank.html" class="user-menu__link pseudo-opacity">Валентин Петухов</a>
             </li>
@@ -77,7 +108,7 @@
             </ul>
           </div>
 
-          <ul class="site-navigation__list">
+          <ul class="site-navigation__list list">
             <li class="site-navigation__item">
               <a href="/blank.html" class="extra-bold site-navigation__link pseudo-opacity">Доставка</a>
             </li>
@@ -98,7 +129,7 @@
 
         <section class="breadcrumbs">
           <h2 class="visually-hidden">Навигация</h2>
-          <ul class="breadcrumbs__list">
+          <ul class="breadcrumbs__list list">
             <li class="breadcrumbs__item">
               <a href="/index.html" class="breadcrumbs__link">Главная</a>
             </li>
@@ -126,7 +157,7 @@
 
             <fieldset>
               <legend>Цвет</legend>
-              <ul class="color-options">
+              <ul class="color-options list">
                 <li>
                   <input type="checkbox" name="black" id="filter-black" checked>
                   <label for="filter-black">Чёрный</label>
@@ -172,7 +203,7 @@
 
         <aside class="sort">
           <h2 class="filter__title extra-bold">Сортировка:</h2>
-          <ul class="sort__list">
+          <ul class="sort__list list">
             <li class="sort__item"><a href="/catalog.html" class="sort__link sort__link--active">По цене</a></li>
             <li class="sort__item"><a href="/catalog.html" class="sort__link">По типу</a></li>
             <li class="sort__item"><a href="/catalog.html" class="sort__link">По популярности</a></li>
@@ -186,7 +217,7 @@
 
         <section class="catalog">
           <h2 class="visually-hidden">Товары каталога</h2>
-          <ul class="catalog__list">
+          <ul class="catalog__list list">
             <li class="catalog__item">
               <img src="img/content/item-1.png" width="360" height="380" alt="Любительская селфи-палка"
                 class="catalog__item-poster">
@@ -250,7 +281,7 @@
         <section class="pagination">
           <h2 class="visually-hidden">Навигация по страницам каталога</h2>
           <a class="pagination__btn pagination__btn-prev extra-bold">Назад</a>
-          <ul class="pagination__list">
+          <ul class="pagination__list list">
             <li class="pagination__item"><a class="pagination__link pagination__link--active extra-bold">1</a></li>
             <li class="pagination__item"><a class="pagination__link extra-bold" href="/catalog.html">2</a></li>
             <li class="pagination__item"><a class="pagination__link extra-bold" href="/catalog.html">3</a></li>
@@ -262,7 +293,7 @@
 
     <footer class="page-footer">
       <div class="container">
-        <ul class="user-menu">
+        <ul class="user-menu list">
           <li class="user-menu__item user-menu__item--username">
             <a href="/blank.html" class="user-menu__link pseudo-opacity">Валентин Петухов</a>
           </li>
@@ -285,7 +316,7 @@
       <div>
         <address class="footer__address">г. Москва, ул. Строителей, 15</address>
 
-        <ul class="site-navigation__list">
+        <ul class="site-navigation__list list">
           <li class="site-navigation__item">
             <a href="/blank.html" class="extra-bold site-navigation__link pseudo-opacity">Доставка</a>
           </li>
@@ -301,7 +332,7 @@
       </div>
 
       <div>
-        <ul class="socials__list">
+        <ul class="socials__list list">
           <li class="socials__item">
             <a href="https://facebook.com/" class="socials__link socials__link--facebook">
               <img src="img/decor/icon-fb.svg" width="32" height="32" alt="Facebook" />
