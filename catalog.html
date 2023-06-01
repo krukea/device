@@ -45,22 +45,21 @@
           <svg class="logo__picture" width="164" height="35">
             <use xlink:href="#logo"></use>
           </svg>
-          <!-- <img src="img/content/logo-device.svg" width="163" height="35" alt="Логотип проекта Девайс"
-                    class="logo__picture" /> -->
         </a>
-        <div>
+        <div class="top-menu-container">
           <form action="https://echo.htmlacademy.ru/" class="search">
-            <label for="search">Поле поиска по сайту</label>
+            <label for="search" class="visually-hidden">Поле поиска по сайту</label>
             <input type="text" name="search" id="search" placeholder="Поиск по сайту" />
             <button type="submit">Найти</button>
           </form>
 
           <ul class="user-menu list">
-            <li class="user-menu__item user-menu__item--no-username">
-              <a href="/blank.html" class="user-menu__link pseudo-opacity">Валентин Петухов</a>
+            <li class="user-menu__item user-menu__item--username">
+              <a href="blank.html" class="user-menu__link pseudo-opacity"
+                aria-label="В личный кабинет пользователя">Валентин Петухов</a>
             </li>
-            <li class="user-menu__item">
-              <a href="/blank.html" class="user-menu__link pseudo-opacity">Войти</a>
+            <li class="user-menu__item user-menu__item--login">
+              <a href="blank.html" class="user-menu__link pseudo-opacity--reversed" aria-label="Выйти">Выйти</a>
             </li>
             <li class="user-menu__item">
               <a href="/blank.html" class="user-menu__link pseudo-opacity">Сравнить</a>
@@ -292,67 +291,66 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="page-footer__container container">
         <ul class="user-menu list">
           <li class="user-menu__item user-menu__item--username">
-            <a href="/blank.html" class="user-menu__link pseudo-opacity">Валентин Петухов</a>
+            <a href="/blank.html" class="user-menu__link pseudo-opacity white-text">Валентин Петухов</a>
           </li>
           <li class="user-menu__item">
-            <a href="/blank.html" class="user-menu__link">Войти</a>
+            <a href="/blank.html" class="user-menu__link white-text">Войти</a>
           </li>
           <li class="user-menu__item">
-            <a href="/blank.html" class="user-menu__link">Сравнить</a>
+            <a href="/blank.html" class="user-menu__link white-text">Сравнить</a>
           </li>
           <li class="user-menu__item">
-            <a href="/blank.html" class="user-menu__link">Корзина</a>
-          </li>
-        </ul>
-      </div>
-
-      <a class="logo__link pseudo-opacity">
-        <img src="img/content/logo-device.svg" width="163" height="35" alt="Лого" class="logo__picture" />
-      </a>
-
-      <div>
-        <address class="footer__address">г. Москва, ул. Строителей, 15</address>
-
-        <ul class="site-navigation__list list">
-          <li class="site-navigation__item">
-            <a href="/blank.html" class="extra-bold site-navigation__link pseudo-opacity">Доставка</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="/blank.html" class="extra-bold site-navigation__link pseudo-opacity">Гарантия</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="/blank.html" class="extra-bold site-navigation__link pseudo-opacity">Контакты</a>
+            <a href="/blank.html" class="user-menu__link white-text">Корзина</a>
           </li>
         </ul>
 
-        <a href="tel:+74954959595" class="footer__phone">Тел.: +7 (495) 495-95-95</a>
-      </div>
-
-      <div>
-        <ul class="socials__list list">
-          <li class="socials__item">
-            <a href="https://facebook.com/" class="socials__link socials__link--facebook">
-              <img src="img/decor/icon-fb.svg" width="32" height="32" alt="Facebook" />
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="https://instagram.com/" class="socials__link socials__link--instagram">
-              <img src="img/decor/icon-instagram.svg" width="32" height="32" alt="Instagram" />
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="https://www.twitter.com/" class="socials__link socials__link--twitter">
-              <img src="img/decor/icon-twitter.svg" width="32" height="32" alt="Twitter" />
-            </a>
-          </li>
-        </ul>
-
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="pseudo-opacity">
-          <img src="img/content/logo-html.svg" width="27" height="34" alt="HTML Academy" />
+        <a class="logo__link pseudo-opacity" aria-label="Ссылка на главную страницу">
+          <svg class="logo__picture" width="164" height="35">
+            <use xlink:href="#logo"></use>
+          </svg>
         </a>
+
+        <div class="page-footer__nav-container">
+          <address class="footer__address white-text">г. Москва, ул. Строителей, 15</address>
+
+          <ul class="site-navigation__list list">
+            <li class="site-navigation__item">
+              <a href="/blank.html" class="extra-bold site-navigation__link pseudo-opacity white-text">Доставка</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="/blank.html" class="extra-bold site-navigation__link pseudo-opacity white-text">Гарантия</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="/blank.html" class="extra-bold site-navigation__link pseudo-opacity white-text">Контакты</a>
+            </li>
+          </ul>
+
+          <a href="tel:+74954959595" class="footer__phone white-text">Тел.: +7 (495) 495-95-95</a>
+        </div>
+
+        <div class="page-footer__socials-container">
+          <ul class="socials__list list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="https://www.facebook.com/">
+                <span class="visually-hidden">Наш профиль в Facebook</span></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--instagram" href="https://www.instagram.com/">
+                <span class="visually-hidden">Наш профиль в Instagram</span></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--twitter" href="https://www.twitter.com/">
+                <span class="visually-hidden">Наш профиль в Twitter</span></a>
+            </li>
+          </ul>
+
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="pseudo-opacity">
+            <img src="img/content/logo-html.svg" width="27" height="34" alt="HTML Academy" />
+          </a>
+        </div>
       </div>
     </footer>
 

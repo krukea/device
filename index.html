@@ -69,8 +69,6 @@
           <svg class="logo__picture" width="164" height="35">
             <use xlink:href="#logo"></use>
           </svg>
-          <!-- <img src="img/content/logo-device.svg" width="163" height="35" alt="Логотип проекта Девайс"
-            class="logo__picture" /> -->
         </a>
         <div class="top-menu-container">
           <form action="https://echo.htmlacademy.ru/" class="search">
@@ -351,7 +349,7 @@
         </div>
       </section>
 
-      <div class="container">
+      <div class="container brands-container">
         <section class="brands">
           <h2 class="visually-hidden">Список брендов</h2>
           <ul class="brands__list list">
@@ -469,23 +467,23 @@
       <h2 class="visually-hidden">Напишите нам</h2>
       <div class="feedback__form-container">
         <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
-          <p>
+          <div class="feedback__name-field">
             <label for="feedback-name">Ваше имя:</label>
             <input type="text" class="feedback__form-field" name="feedback-name" id="feedback-name"
               placeholder="Имя Фамилия">
-          </p>
+          </div>
 
-          <p>
+          <div class="feedback__email-field">
             <label for="feedback-email">Ваш e-mail:</label>
             <input type="email" class="feedback__form-field" name="feedback-email" id="feedback-email"
               placeholder="email@example.com">
-          </p>
+          </div>
 
-          <p>
+          <div class="feedback__message-field">
             <label for="feedback-message">Текст письма:</label>
             <textarea name="feedback-message" class="feedback__form-field feedback-text" id="feedback-message" cols="30"
               rows="10" placeholder="В свободной форме"></textarea>
-          </p>
+          </div>
 
           <button type="submit" class="feedback__form-submit btn-reset-style extra-bold color-link">Отправить</button>
         </form>
