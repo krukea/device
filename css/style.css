@@ -968,11 +968,14 @@ img {
 
 /* Map popup */
 
-.popup-map {
+.modal {
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
+}
+
+.popup-map {
   margin-top: -300px;
   margin-left: -500px;
 }
@@ -989,10 +992,6 @@ img {
 /* Form popup */
 
 .feedback {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
   margin-top: -275px;
   margin-left: -480px;
   width: 960px;
@@ -1070,7 +1069,8 @@ img {
   right: 20px;
 }
 
-.close-form-btn {
+.modal-close {
+  cursor: pointer;
   position: absolute;
   width: 55px;
   height: 55px;
@@ -1078,12 +1078,12 @@ img {
   opacity: 0.5;
 }
 
-.close-form-btn:hover,
-.close-form-btn:focus {
+.modal-close:hover,
+.modal-close:focus {
   opacity: 1;
 }
 
-.close-form-btn:active {
+.modal-close:active {
   opacity: 0.3;
 }
 
