@@ -975,16 +975,20 @@ img {
   left: 50%;
 }
 
-.popup-map {
+.modal--show {
+  display: block;
+}
+
+.map {
   margin-top: -300px;
   margin-left: -500px;
 }
 
-.popup-map__container {
+.map__container {
   position: relative;
 }
 
-.popup-map__close-button {
+.map__close-button {
   top: 29px;
   right: 36px;
 }

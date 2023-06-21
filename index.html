@@ -411,10 +411,11 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <a href="/blank.html">
-            <img src="img/content/map.png" width="560" height="222" alt="Карта" />
-          </a>
-          <a href="/blank.html" class="feedback__link extra-bold color-link">
+          <a href="https://yandex.ru/maps/" class="contacts__map-link modal-open" target="_blank"
+            aria-label="Переход на сайт Яндекс Карты" data-modal="map"><img src="img/content/map.png" width="560"
+              height="222" alt="Офис компании - г. Москва, ул. Строителей, 15" class="contacts__map-picture" /></a>
+
+          <a href="/blank.html" class="feedback__link extra-bold color-link modal-open" data-modal="feedback">
             <span class="color-link__text">напишите нам</span></a>
         </section>
       </div>
@@ -493,7 +494,7 @@
       </div>
     </footer>
 
-    <section class="modal feedback">
+    <section class="modal feedback hidden">
       <h2 class="visually-hidden">Напишите нам</h2>
       <div class="feedback__form-container">
         <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -524,7 +525,7 @@
       </button>
     </section>
 
-    <section class="modal popup-map">
+    <section class="modal map hidden">
       <div class="popup-map__container">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img src="img/content/map-big.png" width="994" height="593" alt="Карта">
@@ -534,5 +535,6 @@
       </div>
     </section>
   </body>
+  <script src="/js/scripts.js"></script>
 
 </html>
