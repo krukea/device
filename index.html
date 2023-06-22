@@ -494,7 +494,7 @@
       </div>
     </footer>
 
-    <section class="modal feedback hidden">
+    <section class="modal feedback">
       <h2 class="visually-hidden">Напишите нам</h2>
       <div class="feedback__form-container">
         <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -525,10 +525,15 @@
       </button>
     </section>
 
-    <section class="modal map hidden">
+    <section class="modal map">
       <div class="popup-map__container">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/content/map-big.png" width="994" height="593" alt="Карта">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1687445418618!5m2!1sru!2sru"
+          width="994" height="593" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p><img src="img/content/map-big.png" width="994" height="593" alt="Карта"></p>
+
         <button type="button" class="popup-map__close-button btn-reset-style modal-close">
           <span class="visually-hidden">Закрыть карту</span>
         </button>
